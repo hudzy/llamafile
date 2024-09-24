@@ -3,7 +3,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 ARG LLAMAEDGE_VERSION='0.14.4'
 ARG WASMEDGE_VERSION='0.14.1'
-ARG MODEL_URL='https://huggingface.co/second-state/Meta-Llama-3.1-8B-GGUF/blob/main/Meta-Llama-3.1-8B-Q5_K_M.gguf'
+ARG MODEL_URL='https://huggingface.co/second-state/Meta-Llama-3.1-8B-GGUF/resolve/main/Meta-Llama-3.1-8B-Q5_K_M.gguf'
 ARG PROMPT_FORMAT='llama-3-chat'
 ARG CONTEXT_SIZE=4096
 ARG TEMPERATURE=0.7

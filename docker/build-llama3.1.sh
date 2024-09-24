@@ -4,7 +4,7 @@ cd $(dirname $0)
 
 export LLAMAEDGE_VERSION='0.14.4'
 export WASMEDGE_VERSION='0.14.1'
-export MODEL_URL='https://huggingface.co/second-state/Meta-Llama-3.1-8B-GGUF/blob/main/Meta-Llama-3.1-8B-Q5_K_M.gguf'
+export MODEL_URL='https://huggingface.co/second-state/Meta-Llama-3.1-8B-GGUF/resolve/main/Meta-Llama-3.1-8B-Q5_K_M.gguf'
 export PROMPT_FORMAT='llama-3-chat'
 export CONTEXT_SIZE=4096
 export TEMPERATURE=0.7
