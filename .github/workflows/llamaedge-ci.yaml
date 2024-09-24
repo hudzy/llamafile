@@ -1,4 +1,4 @@
-name: ql-ci
+name: llamaedge-ci
 
 on:
   push:
