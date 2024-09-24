@@ -18,4 +18,4 @@ docker buildx \
 	--build-arg TEMPERATURE=$TEMPERATURE \
 	--platform linux/amd64 \
 	-t hudzy/llamaedge:$IMAGE_TAG \
-	-f dockerfile .
+	-f Dockerfile .
