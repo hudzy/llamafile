@@ -1,11 +1,11 @@
-name: llamaedge-ci
+name: llamaedge:llama3.1-8b
 
 on:
   push:
     branches:
       - master
     paths:
-      - docker/**
+      - docker/Dockerfile.llama3.1-8b
   workflow_dispatch:
 
 jobs:
@@ -25,5 +25,10 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push
-        working-directory: ./docker
-        run: ./build-llama3.1.sh
+        uses: docker/build-push-action@v6
+        with:
+          context: ./docker
+          file: ./Dockerfile.llama3.1-8b
+          tags: hudzy/llamaedge:llama3.1-8b
+          platforms: linux/amd64
+          push: true
