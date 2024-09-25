@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./docker
-          file: ./Dockerfile.phi3.5-mini
+          file: ./docker/Dockerfile.phi3.5-mini
           tags: hudzy/llamaedge:phi3.5-mini
           platforms: linux/amd64
           push: true

@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./docker
-          file: ./Dockerfile.llama3.1-8b
+          file: ./docker/Dockerfile.llama3.1-8b
           tags: hudzy/llamaedge:llama3.1-8b
           platforms: linux/amd64
           push: true
