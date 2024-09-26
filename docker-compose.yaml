@@ -1,6 +1,20 @@
 version: "3"
 
 services:
+  llamaedge-llama32-1b:
+    image: hudzy/llamaedge:llama3.2-1b
+    container_name: llamaedge-llama32-1b
+    ports:
+      - 8079:8080
+    restart: unless-stopped
+
+  llamaedge-llama32-3b:
+    image: hudzy/llamaedge:llama3.2-3b
+    container_name: llamaedge-llama32-3b
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+
   llamaedge-llama31:
     image: hudzy/llamaedge:llama3.1-8b
     container_name: llamaedge-llama31
