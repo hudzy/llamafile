@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
-ARG LLAMAEDGE_VERSION='0.14.5'
+ARG LLAMAEDGE_VERSION='0.14.11'
 ARG WASMEDGE_VERSION='0.14.1'
 ARG MODEL_URL='https://huggingface.co/second-state/Phi-3.5-mini-instruct-GGUF/resolve/main/Phi-3.5-mini-instruct-Q5_K_M.gguf'
 ARG PROMPT_FORMAT='phi-3-chat'
